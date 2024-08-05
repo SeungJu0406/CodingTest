@@ -8,10 +8,7 @@ public class Solution {
             if(i%n==0)
                 answerList.Add(i);
         }
-        int[] answer = new int[answerList.Count];
-        for(int i = 0 ; i< answer.Length ;i++){
-            answer[i] = answerList[i];   
-        }
+        int[] answer = answerList.ToArray();
         return answer;
     }
 }
