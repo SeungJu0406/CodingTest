@@ -5,10 +5,10 @@ public class Solution {
         string answer = "";
         foreach(char c in my_string){
             if(Char.IsUpper(c)){              
-                answer += c.ToString().ToLower();
+                answer += Char.ToLower(c);
             }
             else{
-                answer += c.ToString().ToUpper();
+                answer += Char.ToUpper(c);
             }
         }
         return answer;
