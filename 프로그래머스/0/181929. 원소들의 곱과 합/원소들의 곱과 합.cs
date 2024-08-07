@@ -3,7 +3,7 @@ using System.Linq;
 
 public class Solution {
     public int solution(int[] numList) {
-        return ArrayMultiply(numList) < numList.Sum()*numList.Sum() ? 1 : 0;
+        return ArrayMultiply(numList) < Math.Pow(numList.Sum(),2) ? 1 : 0;
     }
     public int ArrayMultiply(int[] numList){
         int answer = 1;
