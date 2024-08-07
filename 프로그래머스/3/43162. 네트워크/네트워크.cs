@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 
+// 1. 해당 네트워크를 그래프 형태로 변환
+// 2. 방문하지 않았던 노드를 DFS로 탐색 , DFS로 탐색 성공한 노드는 방문했다고 체크(true 값으로 전환)
+// 3. DFS 한 횟수 한번당 결과값에 1 추가
 public class Solution {
     public  int solution(int n, int[,] computers){
         Graph graph = new Graph(n);        
@@ -27,7 +30,6 @@ public class Solution {
         
     }
     public void DFS(Graph graph, int start,bool[] visited){
-
         SearchNode(graph, start, visited);
     }
     
@@ -39,8 +41,7 @@ public class Solution {
                 SearchNode(graph, i, visited);
             }
         }
-    }
-    
+    }    
 }
 
 
