@@ -3,7 +3,6 @@ using System.Collections.Generic;
 public class Solution {
     public long solution(int n, int[] works) {
         long answer = 0;
-
         Array.Sort(works);
         int max = works[works.Length-1];
         while(n>0)
