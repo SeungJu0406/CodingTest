@@ -21,11 +21,10 @@ public class Solution {
         }
         _counts.Add(++count);
         _counts.Sort();
-        _counts.Reverse();
 
         int answer = 0;
         int curCount = 0;
-        for (int i = 0; i < _counts.Count; i++)
+        for (int i = _counts.Count - 1; i >= 0; i--)
         {
             if (curCount < k)
             {
